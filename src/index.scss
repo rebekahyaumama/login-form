@@ -24,6 +24,7 @@
     .app-form {
       display: flex;
       flex-direction: column;
+      
       input {
         width: 100%;
         padding: 12px 20px;
@@ -32,15 +33,27 @@
         border-radius: 4px;
         box-sizing: border-box;
       }
-      .username-info {
-        font-size: 10px;
-        color:black;
-        text-align: start;
-      }
 
       input.invalid-dirty {
         border-left: 3px solid red;
         background-color: #e6bdb9;
+      }
+
+      .username-info {
+        font-size: 10px;
+        text-align: start;
+        margin-bottom: 1em;
+      }
+
+      .show-password {
+        font-size:10px;
+        width: 30%;
+        align-items: center;
+        display: flex;
+        align-self: flex-end;
+        p {
+          white-space: nowrap;
+        }
       }
 
       .invalid-confirm {
